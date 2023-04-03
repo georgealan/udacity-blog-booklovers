@@ -1,0 +1,165 @@
+@import url(colors.css);
+@import url(fonts.css);
+
+/* #### ALL DOCUMENT #### */
+body {
+    font-family: 'Proxima Nova Regular';
+    font-size: 18px;
+    line-height: 1.6em;
+    color: var(--black);
+}
+
+/* #### PARAGRAPHS #### */
+p {
+    margin: 0 0 1em 0;
+}
+
+.small-p {
+    font-size: 14px;
+}
+
+.content-article p {
+    margin: 0 0 2em 0;
+}
+
+/* #### HEADERS, TITLES #### */
+h1 {
+    font-size: 2.5em;
+    line-height: 0.9em;
+}
+
+.big-title {
+    font-size: 4em;
+    margin: 0 0 0.2em 0;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.55em;
+}
+
+h4 {
+    font-size: 1.25em;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    margin: 0 0 0.3em 0;
+    color: var(--black);
+    line-height: 1.2em;
+    font-family: 'Proxima Nova Bold';
+}
+
+/* #### QUOTES #### */
+q, cite, blockquote p {
+    font-family: 'Proxima Nova Regular Italic';
+    font-size: 1.1em;
+    color: var(--gray-700);
+}
+
+blockquote p::before {
+    content: '\201C';
+}
+
+blockquote p::after {
+    content: '\201D';
+}
+
+/* #### LINKS #### */
+a {
+    color: inherit;
+    text-decoration: underline 0.15em rgba(255, 255, 255, 0);
+    transition: text-decoration-color 300ms;
+}
+
+a:hover {
+    text-decoration-color: var(--black);
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--black);
+}
+
+nav a:active, 
+a:hover {
+    color: var(--primary-500);
+}
+
+.badge {
+    font-family: 'Proxima Nova Bold';
+    font-size: 0.7em;
+}
+
+.content-article a {
+    color: var(--blue-500);
+    text-decoration: underline;
+}
+
+.content-article a:hover {
+    color: var(--primary-500);
+    text-decoration: underline;
+}
+
+.text-top-writers a:hover {
+    color: var(--white);
+    text-decoration: underline;
+}
+
+/* #### LIST #### */
+ul li {
+    font-size: 14px;
+}
+
+.content-article ul li {
+    font-size: 1em;
+}
+
+.text-anchors ul li {
+    list-style: none;
+}
+
+/* #### BUTTONS #### */
+.btn-change-font-size button {
+    font-family: 'Proxima Nova Bold';
+    font-size: 1em;
+}
+
+/* #### MEDIA QUERIES #### */
+@media (max-width: 990px) {
+    .big-title {
+        font-size: 2.7em;
+        color: var(--black);
+    }
+
+    h2 {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 575px) {
+    .big-title {
+        font-size: 2em;
+        color: var(--black);
+    }
+
+    h2 {
+        font-size: 1.25em;
+    }
+}
+
+@media (max-width: 215px) {
+    .big-title {
+        font-size: 1.3em;
+        color: var(--black);
+    }
+
+    h2 {
+        font-size: 0.7em;
+    }
+}

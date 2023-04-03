@@ -1,0 +1,351 @@
+@import url(colors.css);
+
+/*#### SPACES ####*/
+.header-space {
+    margin-top: 6em;
+}
+
+/*#### NAVBAR ####*/
+.logo {
+    width: auto;
+    height: 50px;
+}
+
+.content-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#navbar {
+    background-color: hsl(26, 60%, 90%, 0.4);
+    backdrop-filter: blur(6px);
+    height: 60px;
+    position: sticky;
+    top: 0;
+}
+
+nav a {
+    margin-right: 1.2em;
+}
+
+/*#### HERO SECTION ####*/
+#hero {
+    background-color: var(--primary-100);
+    background: linear-gradient(to bottom, hsl(26, 60%, 90%), hsl(0, 0%, 100%));
+}
+
+.content-hero {
+    padding: 1em;
+}
+
+.character {
+    width: 100%;
+    height: auto;
+}
+
+.text-box {
+    display: grid;
+    align-content: center;
+}
+
+/* #### MAIN CONTENT #### */
+.main-content {
+    padding: 1em; 
+}
+
+/* #### BADGES #### */
+.badge {
+    border-radius: 1em;
+    padding: 0 1.2em;
+}
+
+.badge-must-read {
+    background-color: var(--green-500);
+}
+
+.badge-breathtaking {
+    background-color: var(--primary-500);
+}
+
+.badge-bad {
+    background-color: var(--red-500);
+}
+
+.badge-middling {
+    background-color: var(--blue-500);
+}
+
+.badge-boring {
+    background-color: var(--yellow-500);
+}
+
+
+/* #### WRITER INFO #### */
+.writer-info {
+    padding-left: 0;
+    margin: 8px 0 0;
+}
+
+.writer-info li {
+    display: inline;
+}
+
+
+/* #### AVATAR #### */
+.avatar {
+    vertical-align: middle;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 0.5em;
+}
+
+/* #### RECENT SECTION #### */
+#recent {
+    margin-top: 6em;
+}
+
+.recent-lg {
+    height: 640px;
+    padding: 0 1em 2em 1em;
+    background-image: linear-gradient(to bottom, hsl(222, 78%, 84%, 0.1), hsl(0, 0%, 100%)),
+    url("../assets/images/post-covers/post-img-01.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 1em;
+    grid-row: span 2;
+    display: grid;
+    justify-items: left;
+    align-content: end;
+}
+
+.recent-img {
+    object-fit: cover
+}
+
+.recent-md {
+    height: 304px;
+    padding: 0 1em 2em 1em;
+    background-image: linear-gradient(to bottom, hsl(158, 58%, 80%, 0.6), hsl(0, 0%, 100%)),
+    url("../assets/images/post-covers/post-img-01.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 1em;
+    display: grid;
+    justify-items: left;
+    align-content: end;
+}
+
+.recent-sm {
+    height: 304px;
+    padding: 0 1em 2em 1em;
+    background-image: linear-gradient(to bottom, hsl(26, 60%, 90%, 0.6), hsl(0, 0%, 100%)),
+    url("../assets/images/post-covers/post-img-01.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 1em;
+    display: grid;
+    justify-items: left;
+    align-content: end;
+}
+
+
+/* #### TOP-WRITERS SECTION #### */
+#top-writers {
+    margin-top: 6em;
+}
+
+.top-writers-sm {
+    height: 248px;
+    padding: 0.9em;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 1em;
+    display: grid;
+    justify-items: left;
+    align-content: end;
+    padding: 10px 10px 20px 10px;
+    border-radius: 1em;
+}
+
+.top-writers-img-1 {
+    background-image: linear-gradient(to bottom, hsl(0, 0%, 100%, 0), hsl(26, 15%, 6%)),
+    url("../assets/images/brandon-sanderson.jpg");
+}
+
+.top-writers-img-2 {
+    background-image: linear-gradient(to bottom, hsl(0, 0%, 100%, 0), hsl(26, 15%, 6%)),
+    url("../assets/images/katsuhiro-otomo.jpg");
+}
+
+.top-writers-img-3 {
+    background-image: linear-gradient(to bottom, hsl(0, 0%, 100%, 0), hsl(26, 15%, 6%)),
+    url("../assets/images/bill-watterson.jpg");
+}
+
+.top-writers-img-4 {
+    background-image: linear-gradient(to bottom, hsl(0, 0%, 100%, 0), hsl(26, 15%, 6%)),
+    url("../assets/images/patrick-rothfuss.jpg");
+}
+
+.text-top-writers h3,
+.text-top-writers p {
+    color: var(--white);
+}
+
+.text-top-writers {
+    width: 100%;
+}
+
+/* #### COMIC-BOOK SECTION #### */
+#comic-book {
+    margin-top: 6em;
+}
+
+.box-type-03 {
+    border-radius: 1em;
+}
+
+.cover {
+    width: 100%;
+    object-fit: fill;
+    border-radius: 1em 1em 0 0;
+}
+
+.card-block ul {
+    margin-top: 2em;
+}
+
+
+/* #### TECHNICAL SECTION #### */
+#technical {
+    margin-top: 6em;
+}
+
+
+
+/* #### LITERATURE SECTION #### */
+#literature {
+    margin-top: 6em;
+}
+
+/* #### SUBSCRIBE SECTION #### */
+#subscribe {
+    margin-top: 7em;
+    background-color: var(--primary-100);
+    padding: 4em;
+    border-radius: 1em;
+    border: 0.3em solid var(--gray-700);
+}
+
+.subscribe-text-box {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;   
+}
+
+/* #### FOOTER SECTION #### */
+#footer {
+    background-color: var(--gray-700);
+    margin-top: 6em;
+    padding: 1em;
+}
+
+#footer span,
+#footer nav a {
+    color: var(--gray-100);
+}
+
+.content-copyright {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* #### POST PAGE #### */
+#title-article {
+    margin-top: 4em;
+}
+
+#article {
+    margin-top: 4em;
+}
+
+#article img {
+    width: 100%;
+}
+
+.content-article {
+    padding: 1em;
+}
+
+.content-title {
+    padding: 1em;
+}
+
+.img-article {
+    width: 100%;
+    height: auto;
+}
+
+.img-article-container {
+    background-image: url("../assets/images/post-covers/cover-article-process.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+/* #### BUTTONS #### */
+.btn-change-font-size button {
+    padding: 15px;
+    cursor: pointer;
+    border: 0;
+    border-radius: 0.2em;
+}
+
+.btn-change-font-size button:hover {
+    background-color: var(--primary-100);
+}
+
+.btn-change-font-size {
+    display: flex;
+    justify-content: space-between;
+    width: 56%;
+    margin: 0 0 2em 0;
+}
+
+/* #### ASIDE #### */
+.text-tools {
+    display: flex;
+    position: sticky;
+    flex-direction: column;
+    align-items: end;
+    top: 10vh;
+}
+
+/* #### MEDIA QUERIES #### */
+@media (max-width: 990px) {
+  .recent-lg {
+    grid-row: span 1;
+  }
+
+  #aside {
+    display: none;
+  }
+}
+
+@media (max-width: 575px) {
+    #navbar input {
+        display: none;
+    }
+
+    .recent-lg {
+        grid-row: span 1;
+    }
+
+    #aside {
+        display: none;
+    }   
+}
