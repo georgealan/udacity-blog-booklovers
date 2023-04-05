@@ -1,5 +1,9 @@
 @import url(colors.css);
 
+body {
+    background-color: var(--primary-100);
+}
+
 /*#### SPACES ####*/
 .header-space {
     margin-top: 6em;
@@ -13,11 +17,10 @@
 
 .content-nav {
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
 
-#navbar {
+#navigation {
     background-color: hsl(26, 60%, 90%, 0.4);
     backdrop-filter: blur(6px);
     height: 60px;
@@ -52,6 +55,7 @@ nav a {
 /* #### MAIN CONTENT #### */
 .main-content {
     padding: 1em; 
+    background-color: var(--white);
 }
 
 /* #### BADGES #### */
@@ -309,13 +313,6 @@ nav a {
     background-color: var(--primary-100);
 }
 
-/* .btn-change-font-size {
-    display: flex;
-    justify-content: space-between;
-    width: 56%;
-    margin: 0 0 2em 0;
-} */
-
 /* #### ASIDE #### */
 .text-tools {
     display: flex;
@@ -333,6 +330,25 @@ nav a {
 #aside {
     margin-top: 4em;
 }
+
+.text-anchors a {
+    text-decoration: none;
+    padding: 0.2em 0.5em;
+}
+
+.text-anchors a.active {
+    color: red;
+    background-color: var(--gray-100);
+    border-radius: 0.3em;
+}
+
+.text-anchors a:hover {
+    text-decoration: none;
+    background-color: var(--gray-100);
+    border-radius: 0.3em;
+}
+
+
 
 /* #### MEDIA QUERIES #### */
 @media (max-width: 990px) {
