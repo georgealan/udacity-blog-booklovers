@@ -1,7 +1,7 @@
 @import url(colors.css);
 
 body {
-    background-color: var(--primary-100);
+    background-color: var(--white);
 }
 
 /*#### SPACES ####*/
@@ -36,6 +36,8 @@ nav a {
 #hero {
     background-color: var(--primary-100);
     background: linear-gradient(to bottom, hsl(26, 60%, 90%), hsl(0, 0%, 100%));
+    padding-top: 5em;
+    margin-top: -60px;
 }
 
 .content-hero {
@@ -107,7 +109,7 @@ nav a {
 
 /* #### RECENT SECTION #### */
 #recent {
-    margin-top: 6em;
+    /* margin-top: em; */
 }
 
 .recent-lg {
