@@ -116,11 +116,20 @@ ul li {
     font-size: 14px;
 }
 
+#navbar ul li {
+    list-style: none;
+    font-size: 1.01em;
+}
+
 .content-article ul li {
     font-size: 1em;
 }
 
 .text-anchors ul li {
+    list-style: none;
+}
+
+.menu-mobile li {
     list-style: none;
 }
 

@@ -28,8 +28,59 @@ body {
     top: 0;
 }
 
+.nav-page-links {
+    display: flex;
+    padding: 0;
+}
+
 nav a {
     margin-right: 1.2em;
+}
+
+#toggle-theme {
+    cursor: pointer;
+    border: 2px solid red;
+}
+
+#toggle-menu {
+    display: none;
+    width: auto;
+    height: 40px;
+    justify-self: end;
+}
+
+.menu-mobile {
+    display: none;
+}
+
+.menu-mobile.show-menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    padding-top: 1.2em;
+    position: fixed;
+    top: 60px;
+    background-color: hsl(26, 60%, 90%, 0.4);
+    backdrop-filter: blur(6px);
+}
+
+.menu-mobile a {
+    border-bottom: 1px solid red;
+    padding: 18px 18px 18px 18px;
+    margin-right: 0;
+}
+
+.menu-mobile a:hover {
+    background-color: red;
+    padding: 18px 18px 18px 28px;
+}
+
+.menu-mobile img {
+    width: 70px;
+    height: 70px;
+    align-self: center;
+    margin-top: 4em;
 }
 
 /*#### HERO SECTION ####*/
@@ -374,5 +425,22 @@ nav a {
 
     #aside {
         display: none;
-    }   
+    }
+
+    .nav-page-links {
+        display: none;
+    }
+
+    #toggle-theme {
+        display: none;
+    }
+
+    #toggle-menu {
+        display: grid;
+    }
+
+    #toggle-theme-mobile {
+        cursor: pointer;
+        border: 2px solid green;
+    }
 }

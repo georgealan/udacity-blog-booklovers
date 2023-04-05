@@ -9,18 +9,32 @@
 </head>
 <body>
     <header id="navigation">
-        <nav id="navbar" class="content-nav">
-            <a href="index.html">
+        <nav id="navbar" class="content-nav grid">
+            <a class="col-lg-span-3 col-md-span-3 col-sm-span-3" href="../index.html">
                 <picture>
                     <source class="logo" srcset="../assets/images/logo-complete.png" alt="logo booklovers" media="(min-width: 675px)" />
                     <img class="logo" src="../assets/images/booklovers-logo.svg" alt="logo booklovers">
                 </picture>
             </a>
-            
-            <a href="../index.html">Blog</a>
-            <a href="#">About</a>
+            <ul class="nav-page-links col-lg-span-8 col-md-span-4">
+                <li><a href="../index.html">Design System</a></li>
+                <li><a href="../index.html">Blog</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+            <img id="toggle-theme" class="col-lg-span-1 col-md-span-1" src="#">
+            <img id="toggle-menu" class="col-sm-span-1" src="../assets/icons/hamburger.svg">
         </nav>
     </header>
+
+    <!-- ================== MENU MOBILE ================== -->
+    <div class="menu-mobile-relative">
+        <nav class="menu-mobile">
+            <a class="link-menu-mobile" href="#">Design System</a>
+            <a class="link-menu-mobile" href="../index.html">Blog</a>
+            <a class="link-menu-mobile" href="#">About</a>
+            <img id="toggle-theme-mobile" src="#">
+        </nav>
+    </div>
 
     <section id="title-article">
         <div class="content-title grid">
@@ -37,7 +51,6 @@
                 </p>
                 <span class="writer-info"><img src="../assets/images/avatars/Avatar-17.png" class="avatar" alt="avatar">by George Alan - Mar 31, 2023 - 15 min read</span>
             </div>
-            
         </div>
     </section>
 
@@ -355,5 +368,6 @@
     </footer>
 
     <script src="../scripts/script.js"></script>
+    <script src="../scripts/menu-mobile.js"></script>
 </body>
 </html>

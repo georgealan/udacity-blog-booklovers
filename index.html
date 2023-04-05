@@ -9,19 +9,31 @@
 </head>
 <body>    
     <header id="navigation">
-        <nav id="navbar" class="content-nav">
-            <a href="index.html">
+        <nav id="navbar" class="content-nav grid">
+            <a class="col-lg-span-3 col-md-span-3 col-sm-span-3" href="index.html">
                 <picture>
                     <source class="logo" srcset="assets/images/logo-complete.png" alt="logo booklovers" media="(min-width: 675px)" />
                     <img class="logo" src="assets/images/booklovers-logo.svg" alt="logo booklovers">
                 </picture>
             </a>
-            
-            <a href="index.html">Blog</a>
-            <a href="#">About</a>
+            <ul class="nav-page-links col-lg-span-8 col-md-span-4">
+                <li><a href="pages/design-system.html">Design System</a></li>
+                <li><a href="index.html">Blog</a></li>
+                <li><a href="pages/about.html">About</a></li>
+            </ul>
+            <img id="toggle-theme" class="col-lg-span-1 col-md-span-1" src="#">
+            <img id="toggle-menu" class="col-sm-span-1" src="assets/icons/hamburger.svg">
         </nav>
     </header>
 
+    <!-- ================== MENU MOBILE ================== -->
+    <nav class="menu-mobile">
+        <a class="link-menu-mobile" href="pages/design-system.html">Design System</a>
+        <a class="link-menu-mobile" href="index.html">Blog</a>
+        <a class="link-menu-mobile" href="pages/about.html">About</a>
+        <img id="toggle-theme-mobile" src="#">
+    </nav>
+    
     <section id="hero" class="content-hero">
         <div class="grid">
             <div class="text-box col-lg-span-6 col-md-span-4 col-sm-span-4">
@@ -257,10 +269,10 @@
             <div class="box-subscribe col-lg-span-12 col-md-span-8 col-sm-span-4">
                 <div class="subscribe-text-box">
                     <h2>Subscribe to receive our articles</h2>
-                    <div>
+                    <form>
                         <input type="email" name="email" id="email">
                         <input type="button" value="Subscribe" />
-                    </div>
+                    </form>
                     <p class="small-p">By subscribing you agree to our privacy policy</p>
                 </div>
             </div>
@@ -279,5 +291,7 @@
             </div>
         </div>
     </footer>
+
+    <script src="scripts/menu-mobile.js"></script>
 </body>
 </html>
