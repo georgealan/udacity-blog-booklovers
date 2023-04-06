@@ -9,9 +9,9 @@ toggleMenu.addEventListener('click', () => {
     menuMobile.classList.toggle('show-menu');
     
     if(menuMobile.className === 'menu-mobile show-menu') {
-        toggleMenu.src = "../assets/icons/x.svg";
+        toggleMenu.src = "assets/icons/x.svg";
     } else {
-        toggleMenu.src = "../assets/icons/hamburger.svg";
+        toggleMenu.src = "assets/icons/hamburger.svg";
     }
 })
 
