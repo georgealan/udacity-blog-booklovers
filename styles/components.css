@@ -39,7 +39,8 @@ nav a {
 
 #toggle-theme {
     cursor: pointer;
-    border: 2px solid red;
+    width: 25px;
+    justify-self: center;
 }
 
 #toggle-menu {
@@ -62,14 +63,17 @@ nav a {
 .menu-mobile a:hover {
     background-color: red;
     padding: 18px 18px 18px 28px;
+    transition: 0.7s ease;
 }
 
 .menu-mobile img {
-    width: 70px;
-    height: 70px;
+    width: 40px;
+    height: 40px;
     align-self: center;
     margin-top: 15vh;
 }
+
+
 
 /*#### HERO SECTION ####*/
 #hero {
@@ -354,6 +358,24 @@ nav a {
     background-color: var(--primary-100);
 }
 
+#btn-scroll-top {
+    display: none;
+    z-index: 990;
+    padding: 0.6em;
+    border: none;
+    border-radius: 100%;
+    cursor: pointer;
+    position: fixed;
+    bottom: 4vh;
+    right: 4vw;
+    
+}
+
+#btn-scroll-top img {
+    width: 30px;
+    height: auto;
+}
+
 /* #### ASIDE #### */
 .text-tools {
     display: flex;
@@ -428,8 +450,9 @@ nav a {
     }
 
     #toggle-theme-mobile {
+        width: 40px;
+        height: 40px;
         cursor: pointer;
-        border: 2px solid green;
     }
 
     .menu-mobile.show-menu {
@@ -442,5 +465,6 @@ nav a {
         top: 60px;
         background-color: hsl(26, 60%, 90%, 0.4);
         backdrop-filter: blur(6px);
+        z-index: 999;
     }
 }
