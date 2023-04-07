@@ -1,68 +1,60 @@
 :root {
-    /*#### PRIMARY COLORS ####*/
-    --primary-900: hsl(26, 100%, 10%);
-    --primary-800: hsl(26, 100%, 20%);
-    --primary-700: hsl(26, 100%, 32%);
-    --primary-500: hsl(26, 100%, 56%);
-    --primary-300: hsl(26, 90%, 70%);
-    --primary-200: hsl(26, 80%, 80%);
-    --primary-100: hsl(26, 60%, 90%);
+    --primary: hsl(26, 100%, 56%);
+    --cl-1000: hsl(0, 0%, 10%);
+    --cl-900: hsl(60, 3%, 6%);
+    --cl-800: hsl(27, 44%, 14%);
+    --cl-700: hsl(26, 18%, 38%);
+    --cl-600: hsl(25, 16%, 59%);
+    --cl-500: hsl(28, 48%, 90%);
+    --cl-400: hsl(32, 100%, 97%);
+    --cl-300: hsl(24, 33%, 97%);
+    --cl-200: hsl(0, 0%, 100%);
 
-    /*#### GRAY COLORS ####*/
-    --white: hsl(0, 0%, 100%);
-    --black: hsl(26, 15%, 6%);
-    
-    --gray-900: hsl(26, 15%, 3%);
-    --gray-800: hsl(26, 15%, 6%);
-    --gray-700: hsl(26, 15%, 15%);
-    --gray-500: hsl(26, 100%, 56%);
-    --gray-300: hsl(26, 15%, 60%);
-    --gray-200: hsl(26, 15%, 70%);
-    --gray-100: hsl(26, 10%, 95%);
+    --cl-body-font: var(--cl-800);
+    --cl-header-font: var(--cl-800);
+    --cl-background: var(--cl-400);
+    --cl-subscrib-box: var(--cl-500);
+    --cl-btn-change-font-size: hsl(28, 48%, 90%, 0);
+    --cl-btn-change-font-size-hover: var(--cl-500);
+    --cl-btn-change-font-size-border: var(--cl-600);
+    --cl-footer: var();
 
-    /*#### AUXILIARY COLORS ####*/
-    --blue-700: hsl(205, 85%, 15%);
-    --blue-500: hsl(205, 85%, 40%);
-    --blue-100: hsl(222, 78%, 84%);
+    --hero-gradient: linear-gradient(to bottom, var(--cl-500), var(--cl-400));
 
-    --red-700: hsl(360, 83%, 25%);
-    --red-500: hsl(360, 83%, 62%);
-    --red-100: hsl(360, 83%, 80%);
-
-    --green-700: hsl(158, 88%, 25%);
-    --green-500: hsl(158, 58%, 62%);
-    --green-100: hsl(158, 58%, 80%);
-
-    --yellow-700: hsl(48, 95%, 25%);
-    --yellow-500: hsl(48, 95%, 68%);
-    --yellow-100: hsl(48, 95%, 80%);
+    --cl-translucid-500: hsl(32, 100%, 97%, 0.4);
 }
 
 .dark-theme {
-    --primary2: hsl(27, 94%, 65%);
-
     --primary: hsl(26, 100%, 56%);
-    --black: hsl(60, 3%, 6%);
-    --darkest: hsl(30, 6%, 14%);
-    --dark: hsl(20, 5%, 22%);
-    --medium: hsl(26, 4%, 32%);
-    --light: hsl(24, 5%, 63%);
-    --lightest: hsl(22, 7%, 78%);
-    --white: hsl(0, 0%, 100%);
-}
+    --cl-1000: hsl(0, 0%, 8%);
+    --cl-900: hsl(60, 3%, 6%);
+    --cl-800: hsl(30, 6%, 14%);
+    --cl-700: hsl(20, 5%, 22%);
+    --cl-600: hsl(26, 4%, 32%);
+    --cl-500: hsl(24, 5%, 63%);
+    --cl-400: hsl(22, 7%, 78%);
+    --cl-300: hsl(32, 100%, 97%);
+    --cl-200: hsl(0, 0%, 100%);
 
-.light-theme {
-    --primary: hsl(26, 100%, 56%);
-    --black: hsl(60, 3%, 6%);
-    --darkest: hsl(27, 44%, 14%);
-    --dark: hsl(26, 18%, 38%);
-    --medium: hsl(25, 16%, 59%);
-    --light: hsl(28, 48%, 90%);
-    --lightest: hsl(24, 33%, 97%);
-    --white: hsl(0, 0%, 100%);
+    --cl-body-font: hsl(32, 100%, 97%);
+    --cl-header-font: var(--cl-300);
+    --cl-background: var(--cl-1000);
+    --cl-subscrib-box: var(--cl-800);
+    --cl-btn-change-font-size: hsl(32, 100%, 97%, 0);
+    --cl-btn-change-font-size-hover: var(--cl-700);
+    --cl-btn-change-font-size-border: var(--cl-400);
+
+    --hero-gradient: linear-gradient(to bottom, hsl(60, 3%, 6%), hsl(0, 0%, 8%));
+
+    --cl-translucid-500: hsl(30, 6%, 14%, 0.4);
 }
 
 .gradients {
+    --light-gradient-180: background-color: var(--cl-500),
+    background: linear-gradient(to bottom, var(--cl-500), var(--cl-400));
+
+    --dark-gradient-180: linear-gradient(180deg, rgba(16,16,15,1) 0%, rgba(38,36,34,1) 100%);
+
     --dark-gradient-180: background: rgb(16,16,15),
     background: linear-gradient(180deg, rgba(16,16,15,1) 0%, rgba(38,36,34,1) 100%);
 
