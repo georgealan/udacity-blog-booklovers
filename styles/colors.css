@@ -42,6 +42,7 @@
     --primary2: hsl(27, 94%, 65%);
 
     --primary: hsl(26, 100%, 56%);
+    --black: hsl(60, 3%, 6%);
     --darkest: hsl(30, 6%, 14%);
     --dark: hsl(20, 5%, 22%);
     --medium: hsl(26, 4%, 32%);
@@ -52,10 +53,20 @@
 
 .light-theme {
     --primary: hsl(26, 100%, 56%);
+    --black: hsl(60, 3%, 6%);
     --darkest: hsl(27, 44%, 14%);
     --dark: hsl(26, 18%, 38%);
     --medium: hsl(25, 16%, 59%);
     --light: hsl(28, 48%, 90%);
     --lightest: hsl(24, 33%, 97%);
     --white: hsl(0, 0%, 100%);
+}
+
+.gradients {
+    --dark-gradient-180: background: rgb(16,16,15),
+    background: linear-gradient(180deg, rgba(16,16,15,1) 0%, rgba(38,36,34,1) 100%);
+
+    --dark-gradient-0: background: rgb(16,16,15),
+    background: linear-gradient(0deg, rgba(16,16,15,1) 0%, rgba(38,36,34,1) 100%);
+    
 }
