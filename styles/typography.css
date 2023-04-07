@@ -75,6 +75,17 @@ blockquote p::after {
     content: '\201D';
 }
 
+/* #### FORM INPUTS #### */
+input[type=email] {
+    color: var(--cl-input-text);
+    font-size: 1em;
+}
+
+.subscribe-text-box input[type=button] {
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
 /* #### LINKS #### */
 a {
     color: inherit;
