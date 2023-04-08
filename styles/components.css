@@ -430,6 +430,10 @@ blockquote::before {
     transition: 0.2s;
 }
 
+/* #### FIX JS ERROR IN FIRST PAGE #### */
+.fix-js-error {
+    display: none;
+}
 
 /* #### BUTTONS #### */
 .btn-change-font-size {
