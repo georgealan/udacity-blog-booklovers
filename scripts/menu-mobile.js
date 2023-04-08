@@ -1,17 +1,36 @@
-/* Menu Mobile */
+let mobileMenuState = localStorage.getItem('menuMobileState');
+
 const toggleMenu = document.getElementById('toggle-menu');
 const menuMobile = document.querySelector('.menu-mobile');
 const linkMobile = document.querySelectorAll('.link-menu-mobile');
 let btnScrollToTop = document.getElementById('btn-scroll-top');
+
+let pathXToggleMenuMobile = () => {
+    if(window.localStorage.getItem('darkMode') === 'enabled') {
+        toggleMenu.src = "assets/icons/x-white.svg";
+    } else {
+        toggleMenu.src = "assets/icons/x.svg";
+    }
+}
+
+let pathHToggleMenuMobile = () => {
+    if(window.localStorage.getItem('darkMode') === 'enabled') {
+        toggleMenu.src = "assets/icons/hamburger-white.svg"
+    } else {
+        toggleMenu.src = "assets/icons/hamburger.svg";
+    }
+}
 
 /* Control Menu Mobile */
 toggleMenu.addEventListener('click', () => {
     menuMobile.classList.toggle('show-menu');
     
     if(menuMobile.className === 'menu-mobile show-menu') {
-        toggleMenu.src = "assets/icons/x.svg";
+        pathXToggleMenuMobile();
+        localStorage.setItem('menuMobileState', 'open');
     } else {
-        toggleMenu.src = "assets/icons/hamburger.svg";
+        pathHToggleMenuMobile();
+        localStorage.setItem('menuMobileState', null);
     }
 })
 

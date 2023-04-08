@@ -21,6 +21,8 @@
     --cl-input-bg: var(--cl-200);
     --cl-input-button-hover: hsl(26, 100%, 76%);
     --cl-bg-text-recent-box: hsl(32, 100%, 97%, 0.7);
+    --cl-bloquote: var(--cl-500);
+    --cl-bloquote-before: var(--cl-600);
 
     --badge-cl1: hsl(0, 97%, 66%);
     --badge-cl2: hsl(211, 77%, 58%);
@@ -56,6 +58,8 @@
     --cl-input-text: var(--cl-300);
     --cl-input-button-hover: hsl(26, 100%, 76%);
     --cl-bg-text-recent-box: hsl(30, 6%, 14%, 0.8);
+    --cl-bloquote: var(--cl-800);
+    --cl-bloquote-before: var(--cl-500);
 
     --hero-gradient: linear-gradient(to bottom, hsl(60, 3%, 6%), hsl(0, 0%, 8%));
 
