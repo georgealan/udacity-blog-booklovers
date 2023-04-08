@@ -31,7 +31,7 @@
 
     --hero-gradient: linear-gradient(to bottom, var(--cl-500), var(--cl-400));
 
-    --cl-translucid-500: hsl(32, 100%, 97%, 0.4);
+    --cl-translucid-500: hsl(28, 48%, 90%, 0.8);
 }
 
 .dark-theme {
@@ -63,5 +63,5 @@
 
     --hero-gradient: linear-gradient(to bottom, hsl(60, 3%, 6%), hsl(0, 0%, 8%));
 
-    --cl-translucid-500: hsl(30, 6%, 14%, 0.4);
+    --cl-translucid-500: hsl(60, 3%, 6%, 0.8);
 }

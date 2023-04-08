@@ -37,6 +37,7 @@ toggleMenu.addEventListener('click', () => {
 linkMobile.forEach(link => {
     link.addEventListener('click', () => {
         menuMobile.classList.remove('show-menu');
+        pathHToggleMenuMobile();
     })
 });
 

@@ -22,7 +22,7 @@ body {
 
 #navigation {
     background-color: var(--cl-translucid-500);
-    backdrop-filter: blur(6px);
+    backdrop-filter: blur(7px);
     height: 60px;
     position: sticky;
     top: 0;
@@ -423,6 +423,11 @@ blockquote::before {
     margin: 0;
     width: 34px;
     height: 34px;
+}
+
+.author-social-icons img:hover {
+    filter: opacity(50%) invert(71%) sepia(40%) saturate(7004%) hue-rotate(346deg) brightness(106%) contrast(101%);
+    transition: 0.2s;
 }
 
 
